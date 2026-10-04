@@ -1,0 +1,155 @@
+{
+  "title_pl": "Obiad w restauracji",
+  "title_en": "Lunch at the Restaurant",
+  "story_pl": "W sobotę Marta idzie do małej restauracji z bratem Tomkiem. Przy wejściu mówi „Dzień dobry” i siada przy oknie. Kelner podaje menu.\n\nMarta pyta: „Czy jest zupa pomidorowa?” Kelner odpowiada: „Tak, jest.” Marta mówi: „Poproszę zupę i wodę.” Tomek pyta: „Czy macie pierogi?” Kelner mówi: „Tak, mamy pierogi z serem.”\n\nTomek zamawia pierogi i herbatę. Marta pyta: „Czy mogę prosić o rachunek później?” Kelner uśmiecha się: „Oczywiście.” Jedzenie jest dobre, a restauracja cicha. Po obiedzie Marta płaci kartą. Oboje mówią „Do widzenia” i idą do domu.",
+  "story_en": "On Saturday, Marta goes to a small restaurant with her brother Tomek. At the entrance, she says “Good morning” and sits by the window. The waiter brings the menu.\n\nMarta asks, “Is there tomato soup?” The waiter answers, “Yes, there is.” Marta says, “I’ll have soup and water, please.” Tomek asks, “Do you have pierogi?” The waiter says, “Yes, we have pierogi with cheese.”\n\nTomek orders pierogi and tea. Marta asks, “May I ask for the bill later?” The waiter smiles: “Of course.” The food is good, and the restaurant is quiet. After lunch, Marta pays by card. They both say “Goodbye” and go home.",
+  "new_vocabulary": [
+    {
+      "polish": "restauracja",
+      "form_in_story": "restauracji",
+      "english": "restaurant",
+      "part_of_speech": "noun (f)",
+      "example_pl": "Ta restauracja jest bardzo duża.",
+      "example_en": "This restaurant is very big."
+    },
+    {
+      "polish": "kelner",
+      "form_in_story": "Kelner",
+      "english": "waiter",
+      "part_of_speech": "noun (m)",
+      "example_pl": "Kelner przynosi kawę.",
+      "example_en": "The waiter brings coffee."
+    },
+    {
+      "polish": "menu",
+      "form_in_story": "menu",
+      "english": "menu",
+      "part_of_speech": "noun (n, indeclinable)",
+      "example_pl": "Poproszę menu.",
+      "example_en": "The menu, please."
+    },
+    {
+      "polish": "zupa pomidorowa",
+      "form_in_story": "zupa pomidorowa",
+      "english": "tomato soup",
+      "part_of_speech": "noun phrase (f)",
+      "example_pl": "Zupa pomidorowa jest ciepła.",
+      "example_en": "The tomato soup is warm."
+    },
+    {
+      "polish": "woda",
+      "form_in_story": "wodę",
+      "english": "water",
+      "part_of_speech": "noun (f)",
+      "example_pl": "Piję wodę rano.",
+      "example_en": "I drink water in the morning."
+    },
+    {
+      "polish": "pierogi",
+      "form_in_story": "pierogi",
+      "english": "pierogi; Polish dumplings",
+      "part_of_speech": "noun (plural)",
+      "example_pl": "Lubię pierogi z kapustą.",
+      "example_en": "I like pierogi with cabbage."
+    },
+    {
+      "polish": "ser",
+      "form_in_story": "serem",
+      "english": "cheese",
+      "part_of_speech": "noun (m)",
+      "example_pl": "Kanapka z serem jest dobra.",
+      "example_en": "A sandwich with cheese is good."
+    },
+    {
+      "polish": "herbata",
+      "form_in_story": "herbatę",
+      "english": "tea",
+      "part_of_speech": "noun (f)",
+      "example_pl": "Rano piję herbatę.",
+      "example_en": "I drink tea in the morning."
+    },
+    {
+      "polish": "rachunek",
+      "form_in_story": "rachunek",
+      "english": "bill; check",
+      "part_of_speech": "noun (m)",
+      "example_pl": "Proszę o rachunek.",
+      "example_en": "The bill, please."
+    },
+    {
+      "polish": "później",
+      "form_in_story": "później",
+      "english": "later",
+      "part_of_speech": "adverb",
+      "example_pl": "Zadzwonię do ciebie później.",
+      "example_en": "I’ll call you later."
+    },
+    {
+      "polish": "płacić",
+      "form_in_story": "płaci",
+      "english": "to pay",
+      "part_of_speech": "verb (impf)",
+      "example_pl": "Płacę za kawę.",
+      "example_en": "I pay for the coffee."
+    },
+    {
+      "polish": "karta",
+      "form_in_story": "kartą",
+      "english": "card",
+      "part_of_speech": "noun (f)",
+      "example_pl": "Płacę kartą.",
+      "example_en": "I pay by card."
+    }
+  ],
+  "grammar_rules": [
+    {
+      "title": "Yes-or-no questions with „czy”",
+      "explanation": "Put „czy” at the beginning of a sentence to make a yes-or-no question. The rest of the sentence usually keeps the same word order as a statement. You can answer with „tak” (yes) or „nie” (no). This is a useful, polite way to ask questions in a restaurant.",
+      "pattern": "Czy + sentence? → Tak. / Nie.",
+      "examples": [
+        {
+          "polish": "Czy jest kawa?",
+          "english": "Is there coffee?"
+        },
+        {
+          "polish": "Czy masz wodę?",
+          "english": "Do you have water?"
+        },
+        {
+          "polish": "Czy mogę prosić o menu?",
+          "english": "May I ask for the menu?"
+        }
+      ],
+      "story_examples": [
+        "Marta pyta: „Czy jest zupa pomidorowa?”",
+        "Tomek pyta: „Czy macie pierogi?”",
+        "Marta pyta: „Czy mogę prosić o rachunek później?”"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_pl": "Z kim Marta idzie do restauracji?",
+      "question_en": "Who does Marta go to the restaurant with?",
+      "answer_pl": "Idzie z bratem Tomkiem."
+    },
+    {
+      "question_pl": "Co zamawia Tomek?",
+      "question_en": "What does Tomek order?",
+      "answer_pl": "Zamawia pierogi i herbatę."
+    },
+    {
+      "question_pl": "Czy Marta prosi o rachunek od razu?",
+      "question_en": "Does Marta ask for the bill right away?",
+      "answer_pl": "Nie, prosi o rachunek później."
+    },
+    {
+      "question_pl": "Jak Marta płaci?",
+      "question_en": "How does Marta pay?",
+      "answer_pl": "Płaci kartą."
+    }
+  ],
+  "lesson_date": "2026-10-04",
+  "level": "A0",
+  "topic": "ordering in a restaurant"
+}

@@ -21,11 +21,9 @@ st.set_page_config(page_title="Polish Tutor", page_icon="🇵🇱", layout="wide
 def get_repository() -> LessonRepository:
     return LessonRepository(DATA_DIR)
 
-
 repo = get_repository()
 today = dt.date.today()
 today_str = today.isoformat()
-
 
 # ---------- helpers ----------
 def default_topic(day: dt.date) -> str:
