@@ -5,12 +5,13 @@ from functools import lru_cache
 from dotenv import load_dotenv
 from elevenlabs import VoiceSettings
 from elevenlabs import ElevenLabs
+import streamlit as st
 
-load_dotenv()
+# load_dotenv()
 
-ELEVENLABS_API_KEY: str | None = os.getenv("ELEVENLABS_API_KEY")
-ELEVENLABS_VOICE_ID: str | None = os.getenv("ELEVENLABS_VOICE_ID")
-ELEVENLABS_MODEL: str = os.getenv("ELEVENLABS_MODEL")
+ELEVENLABS_API_KEY = st.secrets["ELEVENLABS_API_KEY"]
+ELEVENLABS_VOICE_ID = st.secrets["ELEVENLABS_VOICE_ID"]
+ELEVENLABS_MODEL = "eleven_v4_turbo"
 OUTPUT_FORMAT: str = "mp3_44100_128"
 
 

@@ -1,14 +1,15 @@
 """Central configuration loaded from environment variables / .env file."""
 import os
 from pathlib import Path
+import streamlit as st
 
 from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
-OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
-LLM_MODEL: str = os.getenv("LLM_MODEL", "gpt-6-luna")
-DATA_DIR: Path = Path(os.getenv("DATA_DIR", "data"))
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+LLM_MODEL = "gpt-6-luna"
+DATA_DIR = "data"
 
 # Daily learning content
 NEW_WORDS_PER_LESSON: int = 15
