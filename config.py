@@ -8,28 +8,33 @@ load_dotenv()
 
 OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
 LLM_MODEL: str = os.getenv("LLM_MODEL", "gpt-6-luna")
-TTS_MODEL: str = os.getenv("TTS_MODEL", "gpt-4o-mini-tts")
-TTS_VOICE: str = os.getenv("TTS_VOICE", "coral")
 DATA_DIR: Path = Path(os.getenv("DATA_DIR", "data"))
 
-# Daily learning targets
-MIN_NEW_WORDS: int = 10
-TARGET_NEW_WORDS: int = 12
-MIN_GRAMMAR_RULES: int = 1
+# Daily learning content
+NEW_WORDS_PER_LESSON: int = 15
+GRAMMAR_RULES_PER_LESSON: int = 3
 MAX_GENERATION_ATTEMPTS: int = 3
+
+# Quiz
+QUIZ_COMPOSITION: dict[str, int] = {
+    "multiple_choice": 4,   # detailed comprehension / inference
+    "fill_blank": 3,        # one per grammar rule, graded automatically
+    "open": 3,              # full-sentence answers in Polish, graded by the LLM
+}
+QUIZ_PASS_SCORE: float = 0.80
 
 # How many previously taught words to send to the model (keeps prompts small)
 MAX_KNOWN_WORDS_IN_PROMPT: int = 400
 
 LEVELS: list[str] = ["A0", "A1", "A2", "B1", "B2"]
 
-# Story length (in words) per CEFR level
+# Story length (in words) per CEFR level - long enough to hold 15 new words + 3 rules
 STORY_LENGTH: dict[str, tuple[int, int]] = {
-    "A0": (80, 120),
-    "A1": (100, 160),
-    "A2": (150, 220),
-    "B1": (200, 300),
-    "B2": (250, 350),
+    "A0": (120, 180),
+    "A1": (150, 220),
+    "A2": (200, 280),
+    "B1": (250, 350),
+    "B2": (300, 400),
 }
 
 # Rotated automatically when the learner does not choose a topic

@@ -1,4 +1,6 @@
-"""Pydantic models describing a daily lesson."""
+"""Pydantic models describing a daily lesson and quiz results."""
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -7,6 +9,7 @@ class VocabItem(BaseModel):
     form_in_story: str = Field(description="Exact form as it appears in the story")
     english: str
     part_of_speech: str = ""
+    why_important: str = ""
     example_pl: str
     example_en: str
 
@@ -24,10 +27,15 @@ class GrammarRule(BaseModel):
     story_examples: list[str] = Field(default_factory=list)
 
 
-class ComprehensionQuestion(BaseModel):
-    question_pl: str
-    question_en: str
-    answer_pl: str
+class QuizQuestion(BaseModel):
+    id: int
+    type: Literal["multiple_choice", "fill_blank", "open"]
+    question: str = Field(description="Question in Polish; fill_blank uses ___ for the gap")
+    hint_en: str = ""
+    options: list[str] = Field(default_factory=list)        # multiple_choice only
+    correct_option: int | None = None                        # multiple_choice only (0-based)
+    accepted_answers: list[str] = Field(default_factory=list)  # fill_blank only
+    reference_answer: str = ""                               # open only (never shown)
 
 
 class Lesson(BaseModel):
@@ -38,9 +46,23 @@ class Lesson(BaseModel):
     story_en: str
     new_vocabulary: list[VocabItem]
     grammar_rules: list[GrammarRule]
-    questions: list[ComprehensionQuestion] = Field(default_factory=list)
+    quiz: list[QuizQuestion] = Field(default_factory=list)
 
     # Filled in by the app (not by the LLM)
     lesson_date: str = ""
     level: str = ""
     topic: str = ""
+
+
+class QuestionResult(BaseModel):
+    id: int
+    score: float          # 0, 0.5 or 1
+    feedback: str = ""    # hint only - never contains the correct answer
+
+
+class QuizAttempt(BaseModel):
+    attempt: int
+    score: float          # 0.0 - 1.0
+    passed: bool
+    answers: dict[str, str]
+    results: list[QuestionResult]

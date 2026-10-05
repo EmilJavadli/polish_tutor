@@ -1,0 +1,345 @@
+{
+  "title_pl": "Telefon od Oli",
+  "title_en": "A Call from Ola",
+  "story_pl": "Ania jest w domu. Po pracy chce zadzwonić do przyjaciółki Oli. Ola nie odbiera. Ania myśli: „Może jest zajęta”. Po chwili telefon dzwoni. To Ola.\n\n„Cześć, Aniu! Masz chwilę?” pyta Ola.\n„Tak. Właśnie piję herbatę. Co się dzieje?”\n\nOla mówi, że jej bateria jest prawie pusta, a ładowarka została w pracy. Ola pyta: „Czy masz drugą ładowarkę?” Ania mówi, że ma. Ania pyta, czy Ola może przyjść do niej. Jutro Ania nie pracuje. Ma drugą ładowarkę w szufladzie.\n\n„Możesz wpaść wieczorem. Będę robić obiad i będę czekać na ciebie” — mówi Ania.\n\nOla jest zadowolona, ale nie chce długo rozmawiać, bo bateria jest słaba. Umawiają się na siódmą. Ania obiecuje pożyczyć Oli ładowarkę. Ola mówi: „Dziękuję! Jutro przyniosę ci małe ciasto”. Po rozmowie Ania odkłada telefon i robi listę zakupów. Potrzebuje jajek, pomidorów i sera na obiad. Jest spokojna: jutro spotka przyjaciółkę, zje kolację i porozmawia bez pośpiechu.",
+  "story_en": "Ania is at home. After work, she wants to call her friend Ola. Ola doesn’t answer. Ania thinks, “Maybe she’s busy.” After a moment, the phone rings. It’s Ola.\n\n“Hi, Ania! Do you have a moment?” Ola asks.\n“Yes. I’m having tea right now. What’s going on?”\n\nOla says that her phone battery is almost dead and her charger was left at work. Ola asks, “Do you have another charger?” Ania says that she does. Ania asks if Ola can come over. Ania isn’t working tomorrow. She has another charger in a drawer.\n\n“You can drop by in the evening. I’ll make dinner and wait for you,” Ania says.\n\nOla is happy, but she doesn’t want to talk for long because the battery is low. They arrange to meet at seven. Ania promises to lend Ola a charger. Ola says, “Thank you! I’ll bring you a little cake tomorrow.” After the call, Ania puts down the phone and makes a shopping list. She needs eggs, tomatoes, and cheese for dinner. She feels calm: tomorrow she’ll meet her friend, eat dinner, and talk without rushing.",
+  "new_vocabulary": [
+    {
+      "polish": "zadzwonić",
+      "form_in_story": "zadzwonić",
+      "english": "to call",
+      "part_of_speech": "verb (perf)",
+      "why_important": "This is a very common way to say that you are going to call someone.",
+      "example_pl": "Chcę zadzwonić do mamy.",
+      "example_en": "I want to call my mom."
+    },
+    {
+      "polish": "przyjaciółka",
+      "form_in_story": "przyjaciółki",
+      "english": "female friend",
+      "part_of_speech": "noun (f)",
+      "why_important": "Its ending changes in phrases such as „do przyjaciółki” (to a female friend).",
+      "example_pl": "Moja przyjaciółka mieszka blisko.",
+      "example_en": "My friend lives nearby."
+    },
+    {
+      "polish": "odbierać",
+      "form_in_story": "odbiera",
+      "english": "to answer (a phone call)",
+      "part_of_speech": "verb (impf)",
+      "why_important": "In Polish, this everyday verb is used for answering the phone.",
+      "example_pl": "Tomek zawsze odbiera telefon.",
+      "example_en": "Tomek always answers the phone."
+    },
+    {
+      "polish": "zajęty",
+      "form_in_story": "zajęta",
+      "english": "busy",
+      "part_of_speech": "adjective",
+      "why_important": "The ending changes to match the person or thing being described.",
+      "example_pl": "Moja siostra jest dziś zajęta.",
+      "example_en": "My sister is busy today."
+    },
+    {
+      "polish": "chwila",
+      "form_in_story": "chwilę",
+      "english": "moment",
+      "part_of_speech": "noun (f)",
+      "why_important": "„Masz chwilę?” is a useful, natural way to ask if someone has a moment.",
+      "example_pl": "Poczekaj chwilę, proszę.",
+      "example_en": "Wait a moment, please."
+    },
+    {
+      "polish": "pusty",
+      "form_in_story": "pusta",
+      "english": "empty",
+      "part_of_speech": "adjective",
+      "why_important": "It describes something with nothing left in it, such as a nearly empty battery.",
+      "example_pl": "Butelka jest pusta.",
+      "example_en": "The bottle is empty."
+    },
+    {
+      "polish": "ładowarka",
+      "form_in_story": "ładowarka",
+      "english": "charger",
+      "part_of_speech": "noun (f)",
+      "why_important": "This useful everyday word is feminine and changes form in sentences.",
+      "example_pl": "Moja ładowarka jest w torbie.",
+      "example_en": "My charger is in the bag."
+    },
+    {
+      "polish": "zostać",
+      "form_in_story": "została",
+      "english": "to be left; to remain",
+      "part_of_speech": "verb (perf)",
+      "why_important": "This verb helps explain that something was left behind somewhere.",
+      "example_pl": "Moja książka została w samochodzie.",
+      "example_en": "My book was left in the car."
+    },
+    {
+      "polish": "wpaść",
+      "form_in_story": "wpaść",
+      "english": "to drop by",
+      "part_of_speech": "verb (perf)",
+      "why_important": "This informal verb is often used when inviting someone for a short visit.",
+      "example_pl": "Wpadnij do mnie po pracy.",
+      "example_en": "Drop by my place after work."
+    },
+    {
+      "polish": "wieczorem",
+      "form_in_story": "wieczorem",
+      "english": "in the evening",
+      "part_of_speech": "adverb",
+      "why_important": "It is a common time expression used to make plans.",
+      "example_pl": "Wieczorem oglądam film.",
+      "example_en": "I watch a film in the evening."
+    },
+    {
+      "polish": "czekać",
+      "form_in_story": "czekać",
+      "english": "to wait",
+      "part_of_speech": "verb (impf)",
+      "why_important": "This frequent verb is used with „na” when you are waiting for someone or something.",
+      "example_pl": "Czekam na autobus.",
+      "example_en": "I’m waiting for the bus."
+    },
+    {
+      "polish": "szuflada",
+      "form_in_story": "szufladzie",
+      "english": "drawer",
+      "part_of_speech": "noun (f)",
+      "why_important": "The word changes to „szufladzie” after „w” when describing where something is.",
+      "example_pl": "Klucze są w szufladzie.",
+      "example_en": "The keys are in the drawer."
+    },
+    {
+      "polish": "umawiać się",
+      "form_in_story": "Umawiają się",
+      "english": "to arrange to meet",
+      "part_of_speech": "verb (impf, reflexive)",
+      "why_important": "This common phrase is used when people make a plan to meet.",
+      "example_pl": "Umawiamy się na kawę w sobotę.",
+      "example_en": "We’re arranging to meet for coffee on Saturday."
+    },
+    {
+      "polish": "pożyczyć",
+      "form_in_story": "pożyczyć",
+      "english": "to lend",
+      "part_of_speech": "verb (perf)",
+      "why_important": "This verb can mean either to lend or to borrow, depending on the context.",
+      "example_pl": "Mogę pożyczyć ci parasol.",
+      "example_en": "I can lend you an umbrella."
+    },
+    {
+      "polish": "pośpiech",
+      "form_in_story": "pośpiechu",
+      "english": "hurry",
+      "part_of_speech": "noun (m)",
+      "why_important": "The phrase „bez pośpiechu” means “without rushing” and is useful in everyday conversation.",
+      "example_pl": "Jemy śniadanie bez pośpiechu.",
+      "example_en": "We’re eating breakfast without rushing."
+    }
+  ],
+  "grammar_rules": [
+    {
+      "title": "Yes-or-no questions with „czy”",
+      "explanation": "Put „czy” before a statement to make a yes-or-no question. You can also use „czy” inside a sentence to report such a question indirectly. The word order after „czy” stays much like an ordinary statement. In a direct question, your voice usually rises at the end.",
+      "pattern": "Czy + subject + verb? / verb + czy + subject + verb",
+      "examples": [
+        {
+          "polish": "Czy masz czas?",
+          "english": "Do you have time?"
+        },
+        {
+          "polish": "Czy ona pracuje?",
+          "english": "Does she work?"
+        },
+        {
+          "polish": "Pytam, czy masz czas.",
+          "english": "I’m asking if you have time."
+        }
+      ],
+      "story_examples": [
+        "Ola pyta: „Czy masz drugą ładowarkę?”",
+        "Ania pyta, czy Ola może przyjść do niej."
+      ]
+    },
+    {
+      "title": "Accusative of feminine nouns ending in -a",
+      "explanation": "When a feminine noun ending in -a is the direct object, its ending usually changes to -ę. This happens with things you drink, see, have, or make. The form answers “what?” after the verb. Learn the changed form together with the noun.",
+      "pattern": "herbata -> herbatę; ładowarka -> ładowarkę; lista -> listę",
+      "examples": [
+        {
+          "polish": "Piję kawę.",
+          "english": "I’m drinking coffee."
+        },
+        {
+          "polish": "Mam torbę.",
+          "english": "I have a bag."
+        },
+        {
+          "polish": "Robię listę.",
+          "english": "I’m making a list."
+        }
+      ],
+      "story_examples": [
+        "„Tak. Właśnie piję herbatę. Co się dzieje?”",
+        "Ma drugą ładowarkę w szufladzie.",
+        "Po rozmowie Ania odkłada telefon i robi listę zakupów."
+      ]
+    },
+    {
+      "title": "Future plans with „będę” and an infinitive",
+      "explanation": "Use „będę” with a verb in its infinitive form to talk about an activity that will happen in the future. The verb „będę” changes with the person: „będę” means “I will,” while „będziesz” means “you will.” Keep the second verb in its dictionary form, such as „robić” or „czekać.”",
+      "pattern": "ja będę + infinitive; ty będziesz + infinitive",
+      "examples": [
+        {
+          "polish": "Jutro będę pracować.",
+          "english": "I will work tomorrow."
+        },
+        {
+          "polish": "Będziesz czekać na mnie.",
+          "english": "You will wait for me."
+        },
+        {
+          "polish": "Wieczorem będę gotować.",
+          "english": "I will cook in the evening."
+        }
+      ],
+      "story_examples": [
+        "Będę robić obiad i będę czekać na ciebie."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "Dlaczego Ania i Ola rozmawiają krótko?",
+      "hint_en": "",
+      "options": [
+        "Ola ma prawie pustą baterię i nie ma ładowarki przy sobie.",
+        "Ania musi zaraz iść do pracy.",
+        "Ola nie chce spotkać Anii.",
+        "Ania nie ma czasu na obiad."
+      ],
+      "correct_option": 0,
+      "accepted_answers": [],
+      "reference_answer": ""
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Dlaczego Ania może pomóc Oli następnego dnia?",
+      "hint_en": "",
+      "options": [
+        "Ola przyniesie jej nowy telefon.",
+        "Ania nie pracuje i ma dodatkową ładowarkę.",
+        "Ania spotyka Olę w pracy.",
+        "Ola ma już ładowarkę w domu."
+      ],
+      "correct_option": 1,
+      "accepted_answers": [],
+      "reference_answer": ""
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Co Ania robi po zakończeniu rozmowy?",
+      "hint_en": "",
+      "options": [
+        "Idzie do pracy po ładowarkę.",
+        "Pije herbatę z Olą.",
+        "Odkłada telefon i robi listę zakupów.",
+        "Dzwoni do innej przyjaciółki."
+      ],
+      "correct_option": 2,
+      "accepted_answers": [],
+      "reference_answer": ""
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "Co wynika z planu Ani i Oli?",
+      "hint_en": "",
+      "options": [
+        "Ania pożyczy Oli telefon, a Ola zrobi obiad.",
+        "Ola spotka Anię w pracy o siódmej rano.",
+        "Ania będzie czekać w domu, a Ola przyniesie ciasto następnego dnia.",
+        "Ola zostawi ciasto w szufladzie."
+      ],
+      "correct_option": 2,
+      "accepted_answers": [],
+      "reference_answer": ""
+    },
+    {
+      "id": 5,
+      "type": "fill_blank",
+      "question": "___ masz dziś chwilę? (czy)",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [
+        "czy"
+      ],
+      "reference_answer": ""
+    },
+    {
+      "id": 6,
+      "type": "fill_blank",
+      "question": "Po pracy piję ___ (herbata).",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [
+        "herbatę"
+      ],
+      "reference_answer": ""
+    },
+    {
+      "id": 7,
+      "type": "fill_blank",
+      "question": "Jutro będę ___ obiad. (gotować)",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [
+        "gotować"
+      ],
+      "reference_answer": ""
+    },
+    {
+      "id": 8,
+      "type": "open",
+      "question": "Dlaczego Ania może pożyczyć Oli ładowarkę?",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [],
+      "reference_answer": "Ania ma drugą ładowarkę w szufladzie, więc może pożyczyć ją Oli."
+    },
+    {
+      "id": 9,
+      "type": "open",
+      "question": "Jak Ania przygotuje się na wieczorne spotkanie z Olą?",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [],
+      "reference_answer": "Ania będzie robić obiad i czekać na Olę."
+    },
+    {
+      "id": 10,
+      "type": "open",
+      "question": "Co zrobiłbyś lub zrobiłabyś, gdyby bateria w twoim telefonie była prawie pusta?",
+      "hint_en": "",
+      "options": [],
+      "correct_option": null,
+      "accepted_answers": [],
+      "reference_answer": "Poprosiłbym przyjaciółkę o ładowarkę i umówiłbym się z nią na spotkanie."
+    }
+  ],
+  "lesson_date": "2026-10-05",
+  "level": "A0",
+  "topic": "a phone call with a friend"
+}

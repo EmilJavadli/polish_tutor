@@ -1,6 +1,5 @@
 """Text-to-speech for listening practice."""
 from agent.llm import get_client
-from config import TTS_MODEL, TTS_VOICE
 import os
 from functools import lru_cache
 from dotenv import load_dotenv

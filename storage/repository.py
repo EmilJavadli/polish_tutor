@@ -1,15 +1,15 @@
-"""File-based storage for lessons, audio and learner progress."""
+"""File-based storage for lessons, audio, quiz attempts and learner progress."""
 import datetime as dt
 import json
 from pathlib import Path
 
 from pydantic import ValidationError
 
-from agent.schemas import Lesson
+from agent.schemas import Lesson, QuizAttempt
 
 
 class LessonRepository:
-    """Stores each lesson as data/lessons/YYYY-MM-DD.json and progress in progress.json."""
+    """Lessons: data/lessons/YYYY-MM-DD.json · Audio: data/audio · Progress: data/progress.json"""
 
     def __init__(self, root: Path):
         self.root = Path(root)
@@ -68,12 +68,16 @@ class LessonRepository:
 
     # ---------- progress ----------
     def _read_progress(self) -> dict:
+        default = {"completed": [], "settings": {}, "quiz_attempts": {}}
         if not self.progress_file.exists():
-            return {"completed": [], "settings": {}}
+            return default
         try:
-            return json.loads(self.progress_file.read_text(encoding="utf-8"))
+            data = json.loads(self.progress_file.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
-            return {"completed": [], "settings": {}}
+            return default
+        for key, value in default.items():
+            data.setdefault(key, value)
+        return data
 
     def _write_progress(self, progress: dict) -> None:
         self.progress_file.write_text(
@@ -86,24 +90,39 @@ class LessonRepository:
             progress["completed"].append(lesson_date)
             self._write_progress(progress)
 
-    def unmark_completed(self, lesson_date: str) -> None:
-        progress = self._read_progress()
-        progress["completed"] = [d for d in progress["completed"] if d != lesson_date]
-        self._write_progress(progress)
-
     def is_completed(self, lesson_date: str) -> bool:
         return lesson_date in self._read_progress()["completed"]
 
+    def reset_lesson_progress(self, lesson_date: str) -> None:
+        """Remove completion and quiz attempts (used when a lesson is regenerated)."""
+        progress = self._read_progress()
+        progress["completed"] = [d for d in progress["completed"] if d != lesson_date]
+        progress["quiz_attempts"].pop(lesson_date, None)
+        self._write_progress(progress)
+
+    # ---------- quiz ----------
+    def save_quiz_attempt(self, lesson_date: str, attempt: QuizAttempt) -> None:
+        progress = self._read_progress()
+        progress["quiz_attempts"].setdefault(lesson_date, []).append(attempt.model_dump())
+        if attempt.passed and lesson_date not in progress["completed"]:
+            progress["completed"].append(lesson_date)
+        self._write_progress(progress)
+
+    def quiz_attempts(self, lesson_date: str) -> list[QuizAttempt]:
+        raw = self._read_progress()["quiz_attempts"].get(lesson_date, [])
+        return [QuizAttempt.model_validate(a) for a in raw]
+
+    # ---------- settings ----------
     def get_setting(self, key: str, default=None):
-        return self._read_progress().get("settings", {}).get(key, default)
+        return self._read_progress()["settings"].get(key, default)
 
     def set_setting(self, key: str, value) -> None:
         progress = self._read_progress()
-        progress.setdefault("settings", {})[key] = value
+        progress["settings"][key] = value
         self._write_progress(progress)
 
     def stats(self, today: dt.date) -> dict:
-        """Totals over completed lessons and the current daily streak."""
+        """Totals over completed (= quiz passed) lessons and the current daily streak."""
         completed = set(self._read_progress()["completed"])
         lessons = [l for l in self._all_lessons() if l.lesson_date in completed]
 
